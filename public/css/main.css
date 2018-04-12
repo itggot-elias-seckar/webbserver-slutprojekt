@@ -1,0 +1,70 @@
+*{
+    font-family: "Merriweather";
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../../2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2);
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin-left: 5%;
+    }
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    .material-icons.md-48 { font-size: 48px; }
+body{
+    margin:0;
+    padding:0;
+}
+wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 0 25px 0 #AAA;
+}
+header{
+    height:15vh;
+    width:100%;
+    background-color:red;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Arial;
+    color:black;
+    text-decoration: none;
+}
+main{
+    padding-top:25px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-family: Arial;
+}
+.login_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
