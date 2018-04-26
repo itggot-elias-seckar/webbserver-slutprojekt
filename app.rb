@@ -1,5 +1,5 @@
 class App < Sinatra::Base
-
+	enable :sessions
 	get '/' do
 		slim(:index)
 	end
@@ -21,7 +21,8 @@ class App < Sinatra::Base
 		data = db.execute("SELECT * FROM users WHERE username IS (?)" ,[username])[0]
 		password_digest = BCrypt::Password.new(data[2])
 		if password_digest == password
-			session[:user] = db.execute("SELECT id FROM users WHERE username=?",[username])
+			result = db.execute("SELECT * FROM users WHERE username=?",[username])[0]
+			session[:user] = result
 			redirect '/home'
 		else
 			redirect '/wrong_password'

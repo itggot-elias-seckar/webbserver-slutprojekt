@@ -14,6 +14,8 @@ html lang="en"
         wrapper
             header
                 h1 Title
+                - if session[:user] != nil
+                    p = "Welcome " + session[:user][1]
             main
                 ==yield
             footer
