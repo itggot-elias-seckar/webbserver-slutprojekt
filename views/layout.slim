@@ -9,16 +9,16 @@ html lang="en"
         script src="js/main.js"
         link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/
         link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" /
-        title Amineckar's
+        title Aerobic
     body
         wrapper
             header
                 img class="logo" src="/img/logo.png"
                 h1 
                     - if session[:user] == nil
-                        a href="/" Amineckar's
+                        a href="/" Aerobic
                     - else
-                        a href="/" Amineckar's
+                        a href="/" Aerobic
                 form action="/searched" method="GET"
                     input class="search" type="text" placeholder="  Search.." name="search"
                     input class="search_b" type="submit" value="Go"

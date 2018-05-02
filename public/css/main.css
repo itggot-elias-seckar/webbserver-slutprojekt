@@ -44,7 +44,7 @@ wrapper{
 header{
     height:15vh;
     width:100%;
-    background-color:#ABC;
+    background-color:#7f1a1a;
     display:flex;
     align-items: center;
     flex-direction: row;
@@ -57,7 +57,7 @@ header a{
     color: white;
 }
 header h1{
-    margin-left: 35%;
+    margin-left: 36.5%;
     margin-top: auto;
     margin-bottom: auto;
     position: absolute;
@@ -76,7 +76,7 @@ footer{
     align-items: center;
     flex-direction: row;
     height:15vh;
-    background-color:#789;
+    background-color:#7f1a1a;
     width:100%;
     position:relative;
     bottom:0;
