@@ -44,13 +44,23 @@ wrapper{
 header{
     height:15vh;
     width:100%;
-    background-color:red;
+    background-color:#ABC;
     display:flex;
     align-items: center;
     flex-direction: row;
     font-family: Arial;
-    color:black;
+    color:white;
     text-decoration: none;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header h1{
+    margin-left: 35%;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
 }
 main{
     padding-top:25px;
@@ -58,13 +68,253 @@ main{
     display:flex;
     flex-direction: column;
     font-family: Arial;
+    padding-bottom: 25px;
 }
-.login_form{
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height:15vh;
+    background-color:#789;
+    width:100%;
+    position:relative;
+    bottom:0;
+    font-family: arial;
+    font-size: 13px;
+}
+footer p{
+    color: white;
+}
+.login_site{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
+    height: 65vh;
+}
+.login_site a{
+    text-decoration: none;
+    color:blue;
+    margin-bottom: 1%;
+}
+.login_site form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1%;
+}
+.login_site input{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 1%;
+}
+.login_button{
+    background-color: lightblue;
+    border: none;
+}
+.wrong{
+    color: red;
+}
+.in{
+    display: flex;
+    flex-direction: row;
+}
+.register_site{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
+    height: 65vh;
+}
+.register_site a{
+    text-decoration: none;
+    color:blue;
+    margin-bottom: 1%;
+}
+.register_site form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1%;
+}
+.register_site input{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 1%;
+}
+.register_button{
+    background-color: lightblue;
+    border: none;
+}
+.logout{
+    margin-left: 5%;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.logout input{
+    color: white;
+    font-family: "Merriweather";
+    font-size: 15px;
+    border:none;
+    background-color: #ABC;
+}
+.logo{
+    margin-left: 35%;
+}
+header form{
+    margin-left: 51%;
+    position: absolute;
+}
+.search{
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+}
+.search_b{
+    height: 35px;
+    width: 40px;
+    border:none;
+    border-radius: 15px;
+    margin-left: -40px;
+    background-color: #f2820a;
+}
+.pics{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.login{
+.columnpic{
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+.columnpic a{
+    text-decoration: none;
+    color: black;
+}
+.productpic{
+    width: 400px;
+    height: 440px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.purchase{
+    width: 140%;
+    height: 50px;
+    font-size: 15px;
+    background-color: #f2820a;
+    border:none;
+    margin-left: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.size{
+    margin-left: 28%;
+    font-size: 15px;
+    width: 20%;
+    text-align: center;
+}
+.select{
+    display: flex;
+    flex-direction: row;
+}
+.price{
+    margin-bottom: 20px;
+}
+.account{
+    margin-left: 40%;
+    color: white;
+    text-decoration: none;
+}
+.login{
+    margin-left: 43%;
+    color: white;
+    text-decoration: none;
+}
+.form_account{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.accountleft{
+    display: flex;
+    flex-direction: column;
+}
+.accountright{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.account_input{
+    height: 30px;
+    width: 300px;
+}
+.account_submit{
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: lightblue;
+    border: none;
+}
+.checkout_desc{
+    display: flex;
+    flex-direction: row;
+    margin-left: 38%;
+    height: 110px;
+}
+.checkout_desc p{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+}
+.card_date{
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    width: 150px;
+    height: 30px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.form_checkout{
+    width:25%;
+    margin-left:21%;
+}
+.final_title{
+    margin-left:32%;
+}
+
+
+
+.test{
+    width: 200px;
+    height: 220px;
+}
+.test2{
+    width: 100px;
+    height: 110px;
 }

@@ -1,0 +1,16 @@
+- if session[:user] == nil
+    .in
+        .login_site
+            h1 Log in
+            form action="/login" method="POST"
+                input class="type" type="text" name="username" placeholder="Username"/
+                input class="type" type="password" name="password" placeholder="Password"/
+                input class="type login_button" type="submit" value="Login"/
+        .register_site
+            h1 Register
+            form action="/register" method="POST"
+                input class="type" type="text" name="username" placeholder="Username"/
+                input class="type" type="password" name="password" placeholder="Password"/
+                input class="type" type="password" name="re_password" placeholder="Re-type Password"/
+                input class="type login_button" type="submit" value="Register"/
+                p class="wrong" Username already exists

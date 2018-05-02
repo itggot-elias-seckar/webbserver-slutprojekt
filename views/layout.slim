@@ -8,14 +8,31 @@ html lang="en"
         script src="js/jquery-3.1.1.min.js"
         script src="js/main.js"
         link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/
-        link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather"
-        title Slutprojekt
+        link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" /
+        title Amineckar's
     body
         wrapper
             header
-                h1 Title
-                - if session[:user] != nil
-                    p = "Welcome " + session[:user][1]
+                img class="logo" src="/img/logo.png"
+                h1 
+                    - if session[:user] == nil
+                        a href="/" Amineckar's
+                    - else
+                        a href="/" Amineckar's
+                form action="/searched" method="GET"
+                    input class="search" type="text" placeholder="  Search.." name="search"
+                    input class="search_b" type="submit" value="Go"
+                - if session[:user] == nil
+                    a class="login" href="/login" Log in/Register
+                - else 
+                    a class="account" href="/account" Account
+                    form class="logout" action="/logout" method="post"
+                        input type="submit" value="Log out"/
             main
-                ==yield
+                == yield
             footer
+                p
+                    |
+                        This website is created by two students from IT-Gymnasiet; 
+                        Elias Seckar and Amin Hamid.
+                    

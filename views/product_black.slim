@@ -1,0 +1,22 @@
+section
+    img class="productpic" src="/img/black_shirt.jpg"
+    .desc
+        h1 = black[4]
+        p   A black shirt with the highest of quality made just for you!
+            <br> A stylish t-shirt you can wear anywhere you go and whatever</br>
+            the occasion! Our patented SuperComfortable fabric will make 
+            <br>you feel as chill as possible while looking as fancy as possible
+        h2 = black[3]
+        .select
+            select class="size"
+                option disabled="disabled" selected="selected" Choose size
+                option S
+                option M
+                option L
+                option XL
+            - if session[:user] == nil
+                form action="/login" method="GET"
+                    input class="purchase" type="submit" value="Purchase"
+            - else 
+                form action="/checkout" method="GET"
+                    input class="purchase" type="submit" value="Purchase"

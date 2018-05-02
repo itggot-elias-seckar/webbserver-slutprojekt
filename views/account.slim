@@ -1,0 +1,22 @@
+- if session[:user] == nil
+    p error
+- else
+    h2 Account
+    form class="form_account" action="/account" method="POST"
+        .accountleft
+            p Full name
+            input class="account_input" type="text" name="name" value="#{user_info[4]}" placeholder="Full name"/
+            p Adress
+            input class="account_input" type="text" name="adress" value="#{user_info[3]}" placeholder="Adress"/
+            p State
+            input class="account_input" type="text" name="state" value="#{user_info[6]}" placeholder="State"/
+        .accountright
+            p Zip code
+            input class="account_input" type="text" name="zip" value="#{user_info[5]}" placeholder="Zip code"/
+            p Phone number
+            input class="account_input" type="text" name="number" value="#{user_info[7]}" placeholder="Phone number"/
+            p E-mail
+            input class="account_input" type="text" name="mail" value="#{user_info[8]}" placeholder="E-mail"/
+            input class="account_submit" type="submit" value="Save"/
+
+    

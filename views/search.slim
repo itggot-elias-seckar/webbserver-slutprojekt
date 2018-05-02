@@ -1,42 +1,24 @@
-h2 Top Deals
-.pics
-    .columnpic
-        a href="/product/black"
-            img class="test" src="/img/black_shirt.jpg"
-            a href="/product/black" = black[4]
-            a href="/product/black" = black[3]
-    .columnpic
-        a href="/product/red"
-            img class="test" src="/img/red_shirt.jpg"
-            a href="/product/red" = red[4]
-            a href="/product/red" = red[3]
-    .columnpic
-        a href="/product/green"
-            img class="test" src="/img/green_shirt.jpg"
-            a href="/product/green" = green[4]
-            a href="/product/green" = green[3]
-    .columnpic
-        a href="/product/blue"
-            img class="test" src="/img/blue_shirt.jpg"
-            a href="/product/blue" = blue[4]
-            a href="/product/blue" = blue[3]
-h2 Most Searched
-.pics
+- if result == nil 
+    p Did not find what you searched for
+- elsif result[4] == "Black shirt"
     .columnpic
         a href="/product/black"
             img class="test" src="/img/black_shirt.jpg"
             a href="/product/black" = black[4]
             a class="price" href="/product/black" = black[3]
+- elsif result[4] == "Red shirt"
     .columnpic
         a href="/product/red"
             img class="test" src="/img/red_shirt.jpg"
             a href="/product/red" = red[4]
             a class="price" href="/product/red" = red[3]
+- elsif result[4] == "Green shirt"
     .columnpic
         a href="/product/green"
             img class="test" src="/img/green_shirt.jpg"
             a href="/product/green" = green[4]
             a class="price" href="/product/green" = green[3]
+- elsif result[4] == "Blue shirt"
     .columnpic
         a href="/product/blue"
             img class="test" src="/img/blue_shirt.jpg"
