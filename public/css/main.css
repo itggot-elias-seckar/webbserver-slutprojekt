@@ -112,7 +112,7 @@ footer p{
     margin-bottom: 1%;
 }
 .login_button{
-    background-color: lightblue;
+    background-color: #f2820a;
     border: none;
 }
 .wrong{
@@ -148,7 +148,7 @@ footer p{
     margin-bottom: 1%;
 }
 .register_button{
-    background-color: lightblue;
+    background-color: #f2820a;
     border: none;
 }
 .logout{
@@ -162,7 +162,7 @@ footer p{
     font-family: "Merriweather";
     font-size: 15px;
     border:none;
-    background-color: #ABC;
+    background-color: #7f1a1a;
 }
 .logo{
     margin-left: 35%;
@@ -240,12 +240,12 @@ h2{
     margin-bottom: 20px;
 }
 .account{
-    margin-left: 40%;
+    margin-left: 81%;
     color: white;
     text-decoration: none;
 }
 .login{
-    margin-left: 43%;
+    margin-left: 84%;
     color: white;
     text-decoration: none;
 }
@@ -273,7 +273,7 @@ h2{
     height: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: lightblue;
+    background-color: #f2820a;
     border: none;
 }
 .checkout_desc{

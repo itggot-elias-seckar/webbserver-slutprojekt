@@ -1,0 +1,14 @@
+- if session[:user] == nil
+    p error
+- else
+    h1 class="final_title" Thank you for your purchase
+    h2 The item will be sent too:
+    .form_account
+        .accountleft
+            p = user_info[4]
+            p = user_info[3]
+            p = user_info[6]
+        .accountright
+            p = user_info[5]
+            p = user_info[7]
+            p = user_info[8]
